@@ -14,6 +14,7 @@
 Ссылка на Google Sheets документ: https://docs.google.com/spreadsheets/d/1HHvU314fvTSsLEVvUlmBfDpBt0_l6_DOVSCLYsLdBBw/edit#gid=0 
 
 Инструкция по запуску программы:
+- Скачать виртуальное окружение моего проекта (https://dropmefiles.com/8N18x) и разархивировать в корень проекта
 - Создать БД kanal_db
 user: kanaluser
 password: kanaluser
