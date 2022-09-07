@@ -1,0 +1,83 @@
+/* общие настройки для всей страницы */
+body,
+html {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	display: grid;
+	background: rgb(238, 174, 202);
+	background: linear-gradient(
+		30deg,
+		rgba(238, 174, 202, 1) 0%,
+		rgba(148, 187, 233, 1) 100%
+	);
+}
+
+
+/* настройки основного блока */
+#container {
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+	display: flex;
+	transform: translatex(0px);
+	transition: all 4.5s;
+}
+
+/* настоящая кнопка, которую мы нажимаем */
+button {
+	justify-self: center;
+	align-self: flex-end;
+}
+
+/* убираем внешнюю границу настоящей кнопки, когда она в фокусе */
+button:focus {
+	outline: none;
+}
+
+/* как бы кнопка, которая будет превращаться в корабль */
+/* за этой нарисованной поверх всего кнопкой и будет прятаться остальное */
+#buttoun {
+	width: 300px;
+	height: 100px;
+	border-radius: 10px 10px 10px 10px;
+	border: none;
+	background-color: rgb(100, 100, 200);
+	z-index: 1;
+	transition: all 1s;
+	font-size: 19px;
+	color: white;
+
+}
+
+/* мачта */
+#mast {
+	width: 12px;
+	height: 160px;
+	transform-origin: bottom;
+	transform: translate(170px, 48px) rotatez(-90deg);
+	background-color: rgb(100, 100, 200);
+	transition: all 1s;
+}
+
+/* парус */
+#sail-1 {
+	width: 0;
+	height: 0;
+	border-bottom: 145px solid white;
+	border-right: 60px solid transparent;
+	transform-origin: bottom;
+	transform: translatex(16px) scaley(0.001);
+	transition: all 1s;
+}
+
+/* второй парус */
+#sail-2 {
+	width: 0;
+	height: 0;
+	border-bottom: 145px solid white;
+	border-left: 100px solid transparent;
+	transform-origin: bottom;
+	transform: translate(-104px, -145px) scaley(0.001);
+	transition: all 1s;
+}
