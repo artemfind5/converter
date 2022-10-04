@@ -1,4 +1,7 @@
-# Реализованный функционал:
+# converter
+Django, requests, httplib2, apiclient, oauth2client, threading, telebot
+
+## Реализованный функционал (untitled/n13/views.py):
 
 1. Получает данные с документа при помощи Google API, сделанного в Google Sheets.
 2. Данные добавляются в БД, в том же виде, что и в файле–источнике, с добавлением колонки «стоимость в руб.»
